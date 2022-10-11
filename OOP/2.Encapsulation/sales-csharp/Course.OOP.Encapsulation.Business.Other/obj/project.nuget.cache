@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "A+VKgN/G5CSCnoVh0bZ8DM2F9NUD3hJUXxJM1F/WYM2dfVdDxDAN3lAv0JXoUb2tHcT+YXd4mmYWz4zwLCA/Sg==",
+  "success": true,
+  "projectFilePath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/Course.OOP.Encapsulation.Business.Other.csproj",
+  "expectedPackageFiles": [
+    "/Users/macovum/.nuget/packages/microsoft.netcore.app/2.2.0/microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/microsoft.netcore.dotnetapphost/2.2.0/microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.2.0/microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/microsoft.netcore.dotnethostresolver/2.2.0/microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/microsoft.netcore.platforms/2.2.0/microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/microsoft.netcore.targets/2.0.0/microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "/Users/macovum/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

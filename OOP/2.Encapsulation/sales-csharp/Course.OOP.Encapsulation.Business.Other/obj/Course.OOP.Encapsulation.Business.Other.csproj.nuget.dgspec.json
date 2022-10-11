@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/Course.OOP.Encapsulation.Business.Other.csproj": {}
+  },
+  "projects": {
+    "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/Course.OOP.Encapsulation.Business.Other.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/Course.OOP.Encapsulation.Business.Other.csproj",
+        "projectName": "Course.OOP.Encapsulation.Business.Other",
+        "projectPath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/Course.OOP.Encapsulation.Business.Other.csproj",
+        "packagesPath": "/Users/macovum/.nuget/packages/",
+        "outputPath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business.Other/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macovum/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/Course.OOP.Encapsulation.Business.csproj": {
+                "projectPath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/Course.OOP.Encapsulation.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/Course.OOP.Encapsulation.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/Course.OOP.Encapsulation.Business.csproj",
+        "projectName": "Course.OOP.Encapsulation.Business",
+        "projectPath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/Course.OOP.Encapsulation.Business.csproj",
+        "packagesPath": "/Users/macovum/.nuget/packages/",
+        "outputPath": "/Users/macovum/Downloads/VSCODE/CSharp-resources/OOP/2.Encapsulation/sales-csharp/Course.OOP.Encapsulation.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macovum/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
