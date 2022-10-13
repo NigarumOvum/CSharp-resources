@@ -1,3 +1,4 @@
+// Dependency Invertion allows our code to have Low-coupling
 using System.Text.Json;
 
 string origin = @"folder/path";
@@ -20,10 +21,11 @@ public class Monitor
     }
     public async Task Show()
     {
+        // InfoByFile info = new InfoByFile(_origin);
         // InfoByRequest info = new InfoByRequest(_origin);
         var posts = await info.Get();
         foreach (var post in posts)
-            Console.WriteLine(posts.title);
+            Console.WriteLine(post.title);
     }
 
 }
@@ -74,8 +76,9 @@ public class InfoByRequest : IInfo
     public async Task<IEnumerable<Post>> Get()
     {
         HttpClient = new HttpClient();
-        var response = await httpClient.GetAsync(_url);
+        var response = await HttpClient.GetAsync(_url);
         var stream = await response.Content.ReadAsStreamAsync();
+
         List<Post> posts = await JsonSerializer.DeserializeAsync<IEnumerable<Post>>(stream);
         return posts;
     }

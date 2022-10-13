@@ -1,4 +1,6 @@
+// With Interface Segregation Principle you can divide Interface and operations
 
+// Class implements 1 with the Sale class  
 public class SaleService : IBasicActions<Sale>
 {
     public void Add(Sale entity)
@@ -8,6 +10,7 @@ public class SaleService : IBasicActions<Sale>
     public Sale Get(int id) => new Sale();
     public List<Sale> GetList() => new List<Sale>();
 }
+// Class implements 2 interfaces with the User class
 public class UserService : IBasicActions<User>, IEditableAction<User>
 {
     public void Add(User entity)
@@ -27,6 +30,7 @@ public class UserService : IBasicActions<User>, IEditableAction<User>
 }
 
 // from one interface create two segregated interfaces
+// escalable way to separate operations
 public interface IBasicActions<T>
 {
     public T Get(int id);
