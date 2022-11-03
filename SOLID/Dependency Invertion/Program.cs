@@ -11,6 +11,7 @@ await monitor.Show();
 
 FileDB monitor = new FileDB(dbPath, origin, info);
 await fileDB.Save();
+
 public class Monitor
 {
     private string _origin;
@@ -21,8 +22,8 @@ public class Monitor
     }
     public async Task Show()
     {
+        // We need to get rid of the next dependency that creates the Object inside Show()
         // InfoByFile info = new InfoByFile(_origin);
-        // InfoByRequest info = new InfoByRequest(_origin);
         var posts = await info.Get();
         foreach (var post in posts)
             Console.WriteLine(post.title);
@@ -41,8 +42,10 @@ public class FileDB
         _origin = origin;
         _info = info;
     }
+
     public async Task Save()
     {
+        // We need to get rid of the next dependency that creates the Object inside Show()
         // InfoByRequest info = new InfoByRequest(_origin);
         var posts = await _info.Get();
         string json = JsonSerializer.Serialize(posts);
@@ -57,6 +60,7 @@ public class InfoByFile : IInfo
     {
         _path = path;
     }
+
     public async Task<IEnumerable<Post>> Get()
     {
         var contentStream = new FileStream(_path, FileMode.Open, FileAccess.Read);
@@ -73,20 +77,24 @@ public class InfoByRequest : IInfo
     {
         _url = url;
     }
+
     public async Task<IEnumerable<Post>> Get()
     {
-        HttpClient = new HttpClient();
-        var response = await HttpClient.GetAsync(_url);
+        HttpClient httpClient = new HttpClient();
+        var response = await httpClient.GetAsync(_url);
+        //Stream for async, String for sync
         var stream = await response.Content.ReadAsStreamAsync();
 
         List<Post> posts = await JsonSerializer.DeserializeAsync<IEnumerable<Post>>(stream);
         return posts;
     }
 }
+//
 public interface IInfo
 {
     public Task<IEnumerable<Post>> Get();
 }
+
 public class Post
 {
     public Internal userId { get; set; }
