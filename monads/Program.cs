@@ -21,8 +21,10 @@ var reverse = (string s) =>
     Array.Reverse(charArray);
     return new string(charArray);
 };
+
 Func<string, string> upper = (string s) => s.ToUpper();
 
+// Work class with strings
 string name = "brealy";
 string nameResult = name.P(reverse).P(upper);
 console.Writeline(nameResult);
@@ -34,15 +36,22 @@ var beer = new List<string>()
 {
     "Erdinger", "Corona", "Colimita", "Amstel"
 };
-var orderedUpperBeers = beers.P(upperList).P(orderedList);
 
+var orderedUpperBeers = beers.P(upperList).P(orderedList);
 orderedUpperBeers.ForEach(e => Console.Writeline(e));
 
 public static class Methods
 {
     public static TOut Pipe<TIn, TOut>(this TIn v, Func<TIn, TOut> fnOut)
-        where TIn : class
-        where TOut : class
+        where TIn : struct
+        where TOut : struct
+    {
+        return fnOut(v);
+    }
+
+    public static TOut P<TIn, TOut>(this TIn v, Func<TIn, TOut> fnOut)
+    where TIn : class
+    where TOut : class
     {
         if (v == null)
             return null;
